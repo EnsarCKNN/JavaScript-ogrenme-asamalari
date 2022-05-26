@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <script src="app.js"></script>
+</head>
+<body>
+<!-- 
+    <p id="demo">Harici bir js klasöründen function çalışması</p><br>
+    <button type="button" onclick="myjs()">Tıkla</button>
+    <p id="demo">Buda body içinde function</p>
+    <button type="button" onclick="myjs()">Tıkla</button>
+    <script>
+    function myjs() {
+    document.getElementById('demo').innerHTML = 'Bunuda öğrenmiş olduk';
+    }
+    </script>
+    <h1>Js Öğrenme</h1><br>
+    <p id="demo">Function Özelliği Çalışmiyor</p>
+    <button type="button" onclick="myjs()">Tıkla</button>
+    <h1>Merhaba Js onclick</h1>
+    <p id="js">Burayı JavaScript ele geçirecek</p>
+    <button type="button"
+    onclick="document.getElementById('js').innerHTML='Javascript burayı ele geçirmiş bulunmakta'">JsÇalıştır</button>
+    innerhtml yazıyı değişmek için kullanılır
+    <h1>Onclik özelliğine alıştırma</h1><br>
+    <p>Butonlara tıkla ve çıkan resimleri gör</p> <br>
+    <img id="kus" src="kus1.jpg" alt="" style="width: 100px;">
+    <button type="button" onclick="document.getElementById('kus').src='kus1.jpg'">Tek kuş</button>
+    <button type="button" onclick="document.getElementById('kus').src='kus2.jpg'">Çift kuş</button>
+    src Resim koymak için kullanılır
+    <h1>Tıklama özelliği devamke</h1><br>
+    <p id="büyük">Tıkla ve yazıyı büyüt adamım</p><br>
+    <button type="button" onclick="document.getElementById('büyük').style.fontSize='50px'">Ben büyütürüm</button>
+    <button type="button" onclick="document.getElementById('büyük').style.fontSize='20px'">Ben küçültürüm</button>
+    Burda style özelliği nasıl kullanılır onu öğrenmiş olduk
+    <h1>Tıklama özelliği devamke</h1><br>
+    <p id="gizli">Beni gizle ve göster adamım</p><br>
+    <button type="button" onclick="document.getElementById('gizli').style.display='none'">Ben gizlerim</button>
+    <button type="button" onclick="document.getElementById('gizli').style.display='inline'">Ben gösteririm</button>
+    style özelliğini kullanmayı alıştırdık
+    <h1>document.write kullanımını öğrencez burda</h1><br>
+    <p>Başlayalım o zaman</p><br>
+    <p id="demo"></p>
+    <script>
+    document.write(5+6);
+    </script>
+    <h1>buton yoluyla işlem yapmak</h1>
+    <p>paragraf işte</p>
+    <button type="button" onclick="document.write(5+6)">Topla</button>
+    <h1>alert bildirim yollama yolunu öğrnme</h1>
+    <p>Window.alert kullan bildirim gelsin</p>
+    <script>
+    window.alert(5+6);
+    </script>
+    <h1>globalde window yazmaya gerk yok</h1>
+    <p>sadece alert yazman yeterli olucaktır</p>
+    <script>
+    alert(5+6);
+    </script>
+    <script>
+    console.log(5+6);
+    </script>
+    <button type="button" onclick="window.print()">TIKLA VE YAZDIR</button>
+    <h1>Js de işlem leri html ekleme</h1><br>
+    <p id="demo"></p>
+    <script>
+    let x,y,z;
+    x = 5;
+    y = 6;
+    z = x + y;
+    document.getElementById('demo').innerHTML = 'TOPLAMI = ' + z + '(onbir)'
+    </script>
+    <h1> js İfadeler</h1><br>
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML = 'Js tarafından bu yazı getirilmiştir'
+    </script>
+    <p id="demo"></p>
+    <script>
+    let x,y,z;
+    x =6;
+    y =6;
+    z =x+y;
+    document.getElementById('demo').innerHTML =z;
+    </script>
+    <p id="demo"></p>
+    <script>
+    let a,b,c;
+    a=5; b=6; c=a+b;
+    document.getElementById('demo').innerHTML=
+    c;
+    </script>
+    <button type="button" onclick="tıkla()">Tıkla js git</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+    function tıkla() {
+    document.getElementById('demo').innerHTML ='Burda 1. js var';
+    document.getElementById('demo1').innerHTML ='Burda 2. js var'
+    }
+    </script>
+    var	Bir değişken bildirir
+    let	Bir blok değişkeni bildirir
+    const	Bir blok sabiti bildirir
+    if	Bir koşulda yürütülecek bir ifade bloğunu işaretler
+    switch	Farklı durumlarda yürütülecek bir ifade bloğunu işaretler
+    for	Bir döngüde yürütülecek bir ifade bloğunu işaretler
+    function	Bir işlev bildirir
+    return	Bir işlevden çıkar
+    try	Bir ifade bloğuna hata işleme uygular
+    <p id="demo"></p>
+    <script>
+    let x;
+    x=5;
+    document.getElementById('demo').innerHTML=x;
+    </script>
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML=(5 + 6)* 10;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    let x,y;
+    x = 5;
+    y = 6;
+    document.getElementById('demo').innerHTML= x+y;
+    </script>
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML= 10 * 5;
+    </script>
+    <p id="demo"></p>
+    <script>
+    var x;
+    x = 6;
+    document.getElementById('demo').innerHTML = x*10;
+    </script> 
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML='merhaba ben'+ ' ' +'js php öğrnemek için bunu öğreniyorum';
+    </script>
+    <p id="demo"></p>
+    <script>
+    let x,y;
+    x=5+6;
+    y= x*10;
+    document.getElementById('demo').innerHTML=y;
+    </script>
+    <p id="demo"></p>
+    <script>
+    let lestName,lestname;
+    lestName = 'eren';
+    lestname = 'ensar';
+    document.getElementById('demo').innerHTML = lestname;
+    </script>
+    <h1 id="my"></h1>
+    <p id="demo"></p>
+    <script>
+    //Bu başlık için //
+    document.getElementById('my').innerHTML = 'MERHABA BEN İLK JS BAŞLIĞIYIM';
+    //Bu paragraf için //
+    document.getElementById('demo').innerHTML = 'Benim ne işim var burda';
+    </script>
+    <p id="demo"></p>
+    <script>
+    var x = 6;
+    var y = 5;
+    var z = x +y;
+    document.getElementById('demo').innerHTML=z;
+    </script>
+    <p id="demo"></p>
+    <script>
+    let x = 4;
+    let y = 6;
+    let z = x + y;
+    document.getElementById('demo').innerHTML=z;
+    </script>
+    <p id="demo"></p>
+    <script>
+    x = 5;
+    y = 6;
+    z = x + y;
+    document.getElementById('demo').innerHTML=z;
+    </script> 
+    <p id="demo"></p>
+    <script>
+    const price1 = 5;
+    const price2 = 6;
+    let totel = price1 + price2;
+    document.getElementById('demo').innerHTML=totel;
+    </script> 
+    <p id="demo"></p>
+    <script>
+    const pi = 3.14;
+    let person = "Ensar";
+    let usd = 'amerika';
+    document.getElementById('demo').innerHTML =pi+"<br>"+person+"<br>"+usd;
+    </script> 
+    <p id="demo"></p>
+    <script>
+    let carName="Bmw";
+    document.getElementById('demo').innerHTML=carName;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let isim='ensar',
+    yaş=17 ,
+    burcu='kova';
+    document.getElementById('demo').innerHTML=burcu;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    try{
+    const PI=134516;
+    PI=1615616;
+    }
+    catch (err){
+    document.getElementById('demo').innerHTML=err;
+    }
+    </script> 
+    <p id="demo"></p>
+    <script>
+    const cars = ['scrol','Bmw','Volvo'];
+    cars[0] = 'Audi';
+    cars.push('Volsvogen');
+    document.getElementById('demo').innerHTML=cars;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    const car = {type:'bmw', model:'M4', color:'white'};
+    car.color='red';
+    car.ons='Krall';
+    car.type='BMW';
+    document.getElementById('demo').innerHTML="Aşiret Paketi "+car.type;
+    </script>    
+    Operatör Açıklaması
+    +   Ekleme
+    -   çıkarma
+    *   Çarpma işlemi
+    **  Üs
+    /   Bölünme
+    %   Bölme Kalan
+    ++  Artış
+    --  Azaltma
+    ==  eşittir
+    === eşit değer ve eşit tip
+    !=  eşit değil
+    !== eşit değerde değil veya eşit tipte değil
+    >   daha büyük
+    <   daha az
+    >=  büyük veya eşit
+    <=  küçük veya eşit
+    ?   üçlü operatör
+    && mantıklı ve
+    || mantıksal veya
+    ! mantıklı değil
+    <p id="demo"></p>
+    <script>
+    let x=10*5;
+    document.getElementById('demo').innerHTML=x;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x,y,z;
+    x=10;
+    y=6;
+    z=x*y;
+    document.getElementById('demo').innerHTML=z;
+    </script>   
+    <p id="demo"></p>
+    <script>   
+    let x=10
+    x++;
+    let z = x;
+    document.getElementById('demo').innerHTML=z;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    function myfunction(v1,v2) {
+    return v1 * v2;
+    }
+    document.getElementById('demo').innerHTML=myfunction(5,5);
+    </script>    
+    <p id="demo"></p>
+    <script>
+    var x = evrensel(4 ,3)
+    document.getElementById('demo').innerHTML = x;
+    function evrensel(a,b) {
+    return a*b;
+    }
+    </script> 
+    <p id="demo"></p>
+    <script>
+    function evrensel(b) {
+    return (20+2) + (b+2);
+    }       
+    //burda b nin değerini innerhtml yazıyorum return işlemleri yapıp
+    // veri tabanına gönderiyor
+    document.getElementById('demo').innerHTML=evrensel(10);
+    </script>   
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML=my(10);
+    function my(j) {
+    return (10+1)*(j+1);
+    }
+    </script>   
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+    js()
+    function js() {
+    let carName = 'volvo';
+    document.getElementById('demo').innerHTML= typeof carName + ' ' + carName
+    }
+    document.getElementById('demo1').innerHTML= typeof carName
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const car = {type:'BMW',model:'M4',rengi:'Mavi'};
+    document.getElementById('demo').innerHTML = 'Arabanın Aratğığınız Özellikleri ' + car.type;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const krall = {ismi:'Ensar',nereli:'Erzurum',yaşı:17,burcu:'kova'};
+    document.getElementById('demo').innerHTML = 'Merhaba benim adım ' + krall.ismi + ' yaşım ' + krall.yaşı; 
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const özel= {
+    adı:'Ensar',
+    soy:'Ykn',
+    yaş: 15,
+    };
+    document.getElementById('demo').innerHTML= özel['adı'] + ' ' +özel['soy'];
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const pro={
+    ad:'ensar',
+    soy:'ykn',
+    yas: 15,
+    fullpro: function() {
+    return this.ad + ' ' + this.soy;
+    }
+    };
+    document.getElementById('demo').innerHTML= pro.fullpro();
+    </script>  
+    <p id="demo"></p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Takvim ve Saati Göster</button>   
+    <button onclick="this.innerHTML=Date()">Saat Kaç?</button> 
+    // hemen üsteki butona this kullanarak butonun içine yazdırmış olduk 
+    //onun üstündekinide getelementbyıd ile paragraf tagının içine yazdırmış olduk 
+    <p id="demo"></p>
+    <button onclick="myjs()">Tıkla</button>
+    <script>
+    function myjs() {
+    document.getElementById('demo').innerHTML=Date();
+    }
+    </script>
+    onchange	Bir HTML öğesi değiştirildi
+    onclick	    Kullanıcı bir HTML öğesini tıklatır
+    onmouseover	Kullanıcı, fareyi bir HTML öğesinin üzerine getirir
+    onmouseout	Kullanıcı, fareyi bir HTML öğesinden uzaklaştırır
+    onkeydown   Kullanıcı bir klavye tuşuna basar
+    onload		Tarayıcı sayfayı yüklemeyi bitirdi  
+    <p id="demo"></p>
+    <script>
+    let text ='EnsarYKN';
+    document.getElementById('demo').innerHTML=text;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let car1 ='BMW M4';
+    let car2 = 'BMW M5';
+    document.getElementById('demo').innerHTML= car1  + ' - ' + car2;
+    </script>    
+    <p id="demo"></p>
+    <script>
+    let answer1 = 'Merhaba Kardeşim';
+    let answer2 = 'Ben EnsarYKN';
+    let answer3 = 'Yaşım 17';
+    document.getElementById('demo').innerHTML=
+    answer1 + '<br>' + answer2 + '<br>' + answer3;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let textt = 'Mehaba JavaScript';
+    document.getElementById('demo').innerHTML= textt.length
+    // length etiketi klavyeye kaç tuş vurduğumuzu söylemeye yazaryan bir kodumuzdur
+    </script>
+    <p id="demo"></p>
+    <script>
+    let tırnak ='Merhaba Ben \"EnsarYKN\" Yaşımda 17';
+    //tırnak eklemek isterseniz metnin içne \"\" bunları kullanmanız yeterli olucaktır
+    document.getElementById('demo').innerHTML=tırnak;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text = 'kaç harf var burda';
+    document.getElementById('demo').innerHTML=text.length;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text ='birinci, ikinci, üçüncü';
+    document.getElementById('demo').innerHTML=text.slice(8,15);
+    </script>  
+    <button onclick="myfunction()">Bas</button>
+    <p id="demo">Merhaba Android</p>
+    <script>
+    function myfunction() {
+    let text = document.getElementById('demo').innerHTML;
+    document.getElementById('demo').innerHTML=text.replace('Android','İos');
+    }
+    </script>    
+    <p id="demo">Ben Eren</p>
+    <button onclick="myphp()">Tıkla Değiştir</button>
+    <script>
+    function myphp() {
+    let txt = document.getElementById('demo').innerHTML;
+    document.getElementById('demo').innerHTML=txt.replace('Eren','EnsarYKN');
+    }
+    </script>   
+    <p id="demo">EnsarYKN</p>
+    <button onclick="myphp()">Tıkla Değiştir</button>
+    <script>
+    function myphp() {
+    let txt = document.getElementById('demo').innerHTML;
+    document.getElementById('demo').innerHTML=txt.toLocaleUpperCase();
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text1 = "Hello";
+    let text2 = "World!";
+    let text3 = text1.concat(" ",text2);
+    document.getElementById("demo").innerHTML = text3;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text = 'EnsarYKN';
+    const değiş = text.split('');
+    text = '';
+    for (let i = 0; i < değiş.length; i++) {
+    text += değiş[i] + '<br>';
+    document.getElementById('demo').innerHTML=text;    
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text = 'ensarYKN';
+    const değiş=text.split('');
+    text='';
+    for (let i = 0; i < değiş.length; i++) {
+    text += değiş[i] + '<br>';
+    document.getElementById('demo').innerHTML=text;
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let str = 'Merhaba';
+    document.getElementById('demo').innerHTML=str.indexOf('Merhaba')
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let text = "The rain in SPAIN stays mainly in the plain"; 
+    document.getElementById("demo").innerHTML = text.match(/ain/g);
+    </script>       
+    <p id="demo"></p>
+    <script>
+    let lastName = 'Ensar';
+    let soyName = 'YKN';
+    let text = `Merhaba ${lastName}  ${soyName}`;
+    document.getElementById('demo').innerHTML=text;
+    </script>       
+    <p id="demo"></p>
+    <script>
+    let price = 10;
+    let VAT = 0.25;
+    let totel = `Totelde : ${price * (1 + VAT).toFixed(2) }`;
+    document.getElementById('demo').innerHTML=totel;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    let text = 'Merhaba';
+    let text1 = ['Kral' , 'Ben' , 'Ensar'];
+    let html = `<h2>${text}</h2><ul>`;
+    for ( const x of text1) {
+    html += `<li>${x}</li>`;
+    }
+    html += `</ul>`;
+    document.getElementById("demo").innerHTML = html;
+    </script>    
+    <p id="demo"></p>
+    <script>
+    let x=500;
+    let y=500;
+    document.getElementById('demo').innerHTML=(x==y);
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x=500;
+    let y=400;
+    document.getElementById('demo').innerHTML=(x===y);
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x=128;
+    document.getElementById('demo').innerHTML=
+    // 3 farklı yoldan aynı sonuçlara erişebilirsiniz
+    x.toString() + '<br>' +
+    (129).toString() + '<br>' +
+    (121+8).toString() + '<br>';
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x=2.5;
+    document.getElementById('demo').innerHTML=
+    //sayı yuvarlatılmış ve üstel gösterim kullanılarak yazılmış bir dize döndürür.
+    x.toExponential() + '<br>' +
+    x.toExponential(2) + '<br>' +
+    x.toExponential(4) + '<br>' +
+    x.toExponential(6);
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x = 11;
+    document.getElementById('demo').innerHTML=
+    // sayının sonuna belirtiğin kadar 0 atar.
+    x.toFixed(0) + '<br>' +
+    x.toFixed(2) + '<br>' +
+    x.toFixed(4) + '<br>' +
+    x.toFixed(6);
+    </script> 
+    <p id="demo"></p>
+    <script>
+    let x=14.55;
+    document.getElementById('demo').innerHTML=
+    //belirtilen uzunlukta yazılmış bir sayı ile bir dize döndürür
+    x.toPrecision() + '<br>' +
+    x.toPrecision(2) + '<br>' +
+    x.toPrecision(4) + '<br>' +
+    x.toPrecision(6);
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let x=15;
+    document.getElementById('demo').innerHTML=
+    //Aynı Sayıları yazdırma nın 3 yolları
+    x.valueOf() + '<br>' +
+    (15).valueOf() + '<br>' +   
+    (10+5).valueOf();
+    </script>   
+    <p id="demo"></p>
+    <script>
+    document.getElementById('demo').innerHTML=
+    Number(true) + '<br>' +
+    Number(false) + '<br>' +
+    Number('10') + '<br>' +
+    Number('10   ') + '<br>' +
+    Number('    10') + '<br>' +
+    Number('      10     ') + '<br>' +
+    Number('10.33') + '<br>' +
+    Number('10,33') + '<br>' +
+    Number('10 33') + '<br>' +
+    Number('Ensar');
+    </script>   
+    <p id="demo"></p>
+    <script>
+    //Js en büyük sayısını ekrana yazdırır
+    let x = Number.MAX_VALUE;
+    document.getElementById('demo').innerHTML=x;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const cars=['volvo','Bmw','Passat','Js'];
+    document.getElementById('demo').innerHTML=cars[1];
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const cars=['volvo','audi','bmw'];
+    cars[1]='opal';
+    document.getElementById('demo').innerHTML=cars;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const değer={bir:'Merhaba',iki:'Ben',üç:'Ensar',dört:'Ykn',beş:'Yaşım',altı:17};
+    document.getElementById('demo').innerHTML=değer.üç;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    const deger = ['css','js','php'];
+    let dön = '<ul>';
+    deger.forEach(myjs);
+    dön += '</ul>';
+    document.getElementById('demo').innerHTML=dön;
+    function myjs(val) {
+    dön += '<li>' + val + '</li>';
+    }
+    </script>    
+    <button onclick="myjs()">Yazdır</button>
+    <p id="demo"></p>
+    <script>
+    const deger=['Apple','Redmi','Hp'];
+    document.getElementById('demo').innerHTML=deger;
+    function myjs() {
+    deger.push('General mobil');
+    document.getElementById('demo').innerHTML=deger;
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const deger =['css','js','php'];
+    // verilen değerin arasına koymak istediğiniz şekli herbirine koyar .join; kullanma amacı budur
+    document.getElementById('demo').innerHTML=deger.join(' * ');
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const deger =['css','js','php'];
+    //pop(); verdiğin değerin en sonunu alır ve hiç vermemişsiniz gibi yapar
+    deger.pop();
+    document.getElementById('demo').innerHTML=deger;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    // Dizeleri birleştirme yolları
+    let text1 = ['css','php','js'];
+    let text2 = ['java','html','c++'];
+    let text3 = text1.concat(text2);
+    document.getElementById('demo').innerHTML=text3.join(' * ');
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const text = ['css','js','php','c++','java'];
+    //.sort(); değerlerin yerlerini karıştırır
+    text.sort();
+    document.getElementById('demo').innerHTML=text;
+    </script>  
+    <p id="demo"></p>
+    <script>
+    const deger =[11111111111111, 111111, 11111, 1111, 111];
+    //küçükten büyüğe doğru sıralama
+    deger.sort(function(a,b){return(a-b)});
+    document.getElementById('demo').innerHTML=deger;
+    </script>   
+    <button onclick="myjs1()">Sayısal sıralama</button>
+    <button onclick="myjs2()">Sayısal sıralama</button>
+    <p id="demo"></p>
+    <script>
+    const sayı = [25,101,15,20];
+    document.getElementById('demo').innerHTML=sayı;
+    function myjs1() {
+    sayı.sort();
+    document.getElementById('demo').innerHTML=sayı;
+    }
+    function myjs2() {
+    sayı.sort(function (a,b){ return(a-b)} );
+    document.getElementById('demo').innerHTML=sayı;
+    }
+    </script>   
+    <button onclick="myjs()">Karıştır</button>
+    <h1 id="demo"></h1>
+    <script>
+    const sayı = [10, 20, 30, 40];
+    document.getElementById('demo').innerHTML=sayı;
+    function myjs() {
+    sayı.sort(function(a,b){return 0.1 - Math.random()});
+    document.getElementById('demo').innerHTML=sayı;
+    }
+    </script>   
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+    const points = [40, 100, 1, 5, 25, 10];
+    document.getElementById("demo").innerHTML = points;  
+    function myFunction() {
+    for (let i = points.length -1; i > 0; i--) {
+    let j = Math.floor(Math.random() * i)
+    let k = points[i]
+    points[i] = points[j]
+    points[j] = k
+    }
+    document.getElementById("demo").innerHTML = points;
+    }
+    </script>   
+    <p>Sayının Değeri Değişir<span id="demo"></span></p>
+    <script>
+    const sayı = [10, 54, 15, 88];
+    sayı.sort( function(a,b){return(b-a)});
+    document.getElementById('demo').innerHTML=sayı[1];
+    </script>   
+    <p>En Küçük Sayı Değerini yazar <span id="demo"></span></p>
+    <script>
+    const sayı = [45, 55, 78, 4];
+    document.getElementById('demo').innerHTML = myjs(sayı);
+    // Sayının en büyük değerini alır eğer max yazan yere min yazarsak buda en küçük değeri alıcagını söyler bize 
+    function myjs(yarr) {
+    return Math.max.apply(null, yarr)
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const cars=[
+    {type:'Volvo' , years:2005},
+    {type:'Bmw' , years:2000},
+    {type:'Audi' , years:2002},
+    ]
+    displaycars()
+    cars.sort(function (a,b){returna.years-b.years})
+    displaycars()
+    function displaycars() {
+    document.getElementById('demo').innerHTML=
+    cars[0].type+' '+cars[0].years+'<br>'+
+    cars[1].type+' '+cars[1].years+'<br>'+
+    cars[2].type+' '+cars[2].years;
+    }
+    </script>   
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+    const deger=['a','c','b','d'];  //sırasız
+    document.getElementById('demo1').innerHTML=deger;
+    deger.sort();   //sıralı
+    document.getElementById('demo2').innerHTML=deger;
+    </script>   
+    <p id="demo"></p>
+    <button onclick="myfun1()">Tıkla</button>
+    <button onclick="myfun2()">Tıkla</button>
+    <script>
+    const deger=[1,2,23,55,100,3];
+    document.getElementById('demo').innerHTML=deger;
+    function myfun1() {
+    deger.sort();
+    document.getElementById('demo').innerHTML=deger;
+    }
+    function myfun2() {
+    deger.sort(function (a,b){return a-b});
+    document.getElementById('demo').innerHTML=deger;
+    }
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const number = [10,50,45,80,21];
+    let text = "";
+    number.forEach(myjs)
+    document.getElementById('demo').innerHTML=text;
+    function myjs(value, index, array) {
+    text += value + "<br>";
+    </script>   
+    <p id="demo"></p>
+    <script>
+    const deger = ['Audi','Wosvogen','Bmw','Fiat'];
+    let arac="";
+    for (let index = 0; index < deger.length; index++) {
+    arac += deger[index]+'<br>';
+    }
+    document.getElementById('demo').innerHTML=arac;
+    </script>   
+    <p id="demo"></p>
+    <script>
+    let  text='';
+    for (let i = 1; i < 10; i++) {
+    text += 'Gün'+i+'<br>';   
+    }
+    document.getElementById('demo').innerHTML=text;
+    </script>   -->
+</body>
+</html>
